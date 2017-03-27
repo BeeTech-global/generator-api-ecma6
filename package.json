@@ -1,6 +1,6 @@
 {
   "name": "generator-api-ecma6",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Api base",
   "main": "index.js",
   "dependencies": {
