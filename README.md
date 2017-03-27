@@ -1,5 +1,7 @@
 # generator-api-ecma6
 
+[![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
+
 > Restify api with unit and integrated tests written in ecma6
 
 ## Folder structure
@@ -169,7 +171,6 @@ yo api-ecma6
     run `mocha`
 
 
-[![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Issue count][issue-image]][issue-url] 
 ## License 
 
 MIT © 
@@ -178,5 +179,3 @@ MIT ©
 [npm-url]: https://npmjs.org/package/generator-api-ecma6
 [daviddm-image]: https://david-dm.org/BeeTech-global/generator-api-ecma6.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/BeeTech-global/generator-api-ecma6
-[issue-image]: https://codeclimate.com/github/BeeTech-global/generator-api-ecma6/badges/issue_count.svg
-[issue-url]: https://codeclimate.com/github/BeeTech-global/generator-api-ecma6
