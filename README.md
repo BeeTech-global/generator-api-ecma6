@@ -56,7 +56,7 @@ Folder with helpers
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-restify-with-tests using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-api-ecma6 using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
