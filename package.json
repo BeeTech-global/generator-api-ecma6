@@ -1,7 +1,7 @@
 {
   "name": "generator-api-ecma6",
   "version": "0.0.0",
-  "description": "Api base inpired in DDD",
+  "description": "Api base",
   "main": "index.js",
   "dependencies": {
     "chalk": "^1.1.3",

@@ -2,6 +2,56 @@
 
 > Restify api with unit and integrated tests written in ecma6
 
+## Folder structure
+
+```
+.
+├── src
+|   ├── app
+|   ├── core
+|   ├── features
+|   |   ├── {version}
+|   |   |   ├── {domain}
+|   |   |   |   ├── controllers
+|   |   |   |   ├── repositories
+|   |   |   |   ├── routes
+|   |   |   |   ├── services
+|   ├── router
+|   ├── util
+├── test
+|   ├── integration
+|   └── unit
+
+
+```
+
+### app
+
+Folder with server implementation
+
+### core
+
+Folder with objects to be extendeds
+
+### features
+
+Folder with your domains
+ 
+ * **version** - api version
+   * **domain**
+     * **controllers** - controllers (control the request and response flow) to be used in routes
+     * **services** - services (business logic) to be used in controllers
+     * **repositories** - repositories (bring data) to be used in services
+     * **routes** - routes (only call controller method) to be exported to index.js file  
+
+### router
+
+Route consolidator
+
+### util
+
+Folder with helpers
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-restify-with-tests using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
