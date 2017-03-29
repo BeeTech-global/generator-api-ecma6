@@ -4,6 +4,5 @@
 .travis.yml
 .env
 .codeclimate.yml
-test
 coverage
 
