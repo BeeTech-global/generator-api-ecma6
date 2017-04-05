@@ -26,7 +26,11 @@
     "lint": "eslint src test",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha",
     "climate-coverage": "cross-env NODE_ENV=test npm run coverage && codeclimate-test-reporter < coverage/lcov.info",
-    "climate-coverage-dotenv": "cross-env NODE_ENV=test npm run coverage && node -r dotenv/config node_modules/codeclimate-test-reporter/bin/codeclimate.js < coverage/lcov.info"
+    "climate-coverage-dotenv": "cross-env NODE_ENV=test npm run coverage && node -r dotenv/config node_modules/codeclimate-test-reporter/bin/codeclimate.js < coverage/lcov.info",
+    "migrate": "node node_modules/db-migrate/bin/db-migrate up",
+    "migrate:production": "node node_modules/db-migrate/bin/db-migrate up -e production",
+    "migrate:stage": "node node_modules/db-migrate/bin/db-migrate up -e stage",
+    "migrate:homolog": "node node_modules/db-migrate/bin/db-migrate up -e homolog"
   },
   "config": {
     "pre-git": {

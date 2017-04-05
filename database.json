@@ -1,0 +1,22 @@
+{
+  "dev": {
+    "driver": "sqlite3",
+    "filename": "~/dev.db"
+  },
+  "stage": {
+    "driver": "sqlite3",
+    "filename": ":memory:"
+  },
+  "homolog": {
+    "driver": "sqlite3",
+    "filename": ":memory:"
+  },
+  "production": {
+    "driver": "pg",
+    "user": "test",
+    "password": "test",
+    "host": "localhost",
+    "database": "mydb",
+    "schema": "my_schema"
+  }
+}
