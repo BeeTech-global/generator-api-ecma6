@@ -82,7 +82,6 @@
     "pg": "^6.1.5",
     "request": "^2.81.0",
     "shelljs": "^0.7.7",
-    "sqlite3": "^3.1.8",
     "yeoman-generator": "^1.1.1",
     "yosay": "^2.0.0"
   }

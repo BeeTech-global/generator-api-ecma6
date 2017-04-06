@@ -1,5 +1,5 @@
 {
-  "dev": {
+  "development": {
     "driver": "sqlite3",
     "filename": "~/dev.db"
   },
@@ -13,10 +13,11 @@
   },
   "production": {
     "driver": "pg",
-    "user": "test",
-    "password": "test",
-    "host": "localhost",
-    "database": "mydb",
-    "schema": "my_schema"
-  }
+    "user": {"ENV": "DB_USERNAME"},
+    "password": {"ENV": "DB_PASSWORD"},
+    "host": {"ENV": "DB_HOST"},
+    "database": {"ENV": "DB_DATABASE"},
+    "schema": {"ENV": "DB_SCHEMA"}
+  },
+  "defaultEnv": "development"
 }
