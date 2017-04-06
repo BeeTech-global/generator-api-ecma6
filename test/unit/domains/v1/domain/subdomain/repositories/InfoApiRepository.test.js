@@ -1,8 +1,8 @@
 const nock = require('nock');
 const expect = require('expect.js');
-const { InfoApiRepository } = require('../../../../../../src/features/v1/info/repositories');
-const mock = require('../../../../mock/v1/json/info-api.json.js');
-require('../../../../mock/v1/info-api.mock')(nock);
+const { InfoApiRepository } = require('../../../../../../../src/domains/v1/domain/subdomain/repositories');
+const mock = require('../../../../../mock/v1/json/info-api.json.js');
+require('../../../../../mock/v1/info-api.mock')(nock);
 
 describe('InfoApiRepository', function () {
   beforeEach(function () {

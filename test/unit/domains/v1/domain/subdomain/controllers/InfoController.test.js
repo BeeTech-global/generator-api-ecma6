@@ -1,5 +1,5 @@
 const expect = require('expect.js');
-const { InfoController } = require('../../../../../../src/features/v1/info/controllers');
+const { InfoController } = require('../../../../../../../src/domains/v1/domain/subdomain/controllers');
 
 describe('InfoController', function () {
   beforeEach(function () {
