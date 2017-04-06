@@ -1,4 +1,4 @@
-const BaseService = require('../../../../core/BaseService');
+const BaseService = require('../../../../../core/BaseService');
 
 module.exports = class InfoService extends BaseService {
   constructor(repository) {

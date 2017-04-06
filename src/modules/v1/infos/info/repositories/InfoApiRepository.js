@@ -1,8 +1,8 @@
 const request = require('request-promise').defaults({
   json: true,
 });
-const BaseRepository = require('../../../../core/BaseRepository.js');
-const { throwMissingParameter } = require('../../../../util');
+const BaseRepository = require('../../../../../core/BaseRepository.js');
+const { throwMissingParameter } = require('../../../../../util');
 
 module.exports = class InfoApiRepository extends BaseRepository {
   constructor(baseUrl) {

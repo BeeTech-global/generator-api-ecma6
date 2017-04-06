@@ -1,4 +1,4 @@
-const BaseController = require('../../../../core/BaseController');
+const BaseController = require('../../../../../core/BaseController');
 
 module.exports = class InfoController extends BaseController {
   constructor(service) {
