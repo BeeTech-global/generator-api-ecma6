@@ -3,15 +3,7 @@
     "driver": "sqlite3",
     "filename": "~/dev.db"
   },
-  "stage": {
-    "driver": "sqlite3",
-    "filename": ":memory:"
-  },
-  "homolog": {
-    "driver": "sqlite3",
-    "filename": ":memory:"
-  },
-  "production": {
+  "default": {
     "driver": "pg",
     "user": {"ENV": "DB_USERNAME"},
     "password": {"ENV": "DB_PASSWORD"},

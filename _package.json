@@ -12,7 +12,7 @@
     "node": "~6.9.x"
   },
   "scripts": {
-    "start": "node src/index.js",
+    "start": "cross-env NODE_ENV=test node src/index.js",
     "start:production": "cross-env NODE_ENV=production node src/index.js",
     "start:stage": "cross-env NODE_ENV=development node src/index.js",
     "start:homolog": "cross-env NODE_ENV=homologation node src/index.js",

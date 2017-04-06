@@ -1,5 +1,5 @@
 var db_conf = require('../../database.json');
-var env = process.env.NODE_ENV || 'development';
+var env = process.env.NODE_ENV == 'test' ? 'development' : 'default';
 var knex_conf = {
   client: db_conf[env].driver,
   connection: {
