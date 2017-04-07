@@ -1,4 +1,7 @@
-const BaseRepository = require('../../../../core/BaseRepository.js');
+const BaseRepository = require('../../../../../core/BaseRepository.js');
+const knexConf = require('../../../../../common/knexConf.js');
+const knex = require('knex')(knexConf);
+
 
 module.exports = class InfoMemoryRepository extends BaseRepository {
   constructor(infos) {

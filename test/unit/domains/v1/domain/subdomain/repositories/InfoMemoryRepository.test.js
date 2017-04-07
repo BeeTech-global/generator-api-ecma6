@@ -1,5 +1,5 @@
 const expect = require('expect.js');
-const { InfoMemoryRepository } = require('../../../../../../src/features/v1/info/repositories');
+const { InfoMemoryRepository } = require('../../../../../../../src/domains/v1/domain/subdomain/repositories');
 
 describe('InfoMemoryRepository', function () {
   beforeEach(function () {

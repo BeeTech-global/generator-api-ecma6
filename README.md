@@ -10,14 +10,16 @@
 .
 ├── src
 |   ├── app
+|   ├── common
 |   ├── core
-|   ├── features
+|   ├── domains
 |   |   ├── {version}
 |   |   |   ├── {domain}
-|   |   |   |   ├── controllers
-|   |   |   |   ├── repositories
-|   |   |   |   ├── routes
-|   |   |   |   ├── services
+|   |   |   |   ├── {subdomain}
+|   |   |   |   |   ├── controllers
+|   |   |   |   |   ├── repositories
+|   |   |   |   |   ├── routes
+|   |   |   |   |   ├── services
 |   ├── router
 |   ├── util
 ├── test

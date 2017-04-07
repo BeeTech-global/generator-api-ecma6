@@ -1,7 +1,7 @@
 const expect = require('expect.js');
 const sinon = require('sinon');
 
-const { InfoService } = require('../../../../../../src/features/v1/info/services');
+const { InfoService } = require('../../../../../../../src/domains/v1/domain/subdomain/services');
 
 describe('InfoService', function () {
   beforeEach(function () {
