@@ -1,7 +1,7 @@
 {
   "development": {
     "driver": "sqlite3",
-    "filename": "~/dev.db"
+    "filename": "./dev.db"
   },
   "default": {
     "driver": "pg",

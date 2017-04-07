@@ -79,6 +79,8 @@
     "eslint-plugin-import": "^2.2.0",
     "knex": "^0.12.9",
     "pg": "^6.1.5",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "@beetech/bee-models": "git+git@bitbucket.org:beetech_egenius/bee-models.git",
+    "@beetech/bee-sting": "git+git@bitbucket.org:beetech_egenius/bee-sting.git"
   }
 }
