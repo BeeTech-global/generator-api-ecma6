@@ -1,0 +1,8 @@
+{
+  "grants": [
+    {
+      "domain": "domain",
+      "subdomain": "subdomain"
+    }
+  ]
+}

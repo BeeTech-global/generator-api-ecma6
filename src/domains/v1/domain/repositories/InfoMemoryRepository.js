@@ -1,4 +1,4 @@
-const BaseRepository = require('../../../../../core/BaseRepository.js');
+const BaseRepository = require('../../../../core/BaseRepository.js');
 
 module.exports = class InfoMemoryRepository extends BaseRepository {
   constructor(infos) {

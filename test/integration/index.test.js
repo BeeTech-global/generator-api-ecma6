@@ -1,8 +1,12 @@
 const request = require('supertest');
 const expect = require('expect.js');
+const nock = require('nock');
 const app = require('../../src/app/index.js');
 
+require('./mock/app/authorization/authentication.mock')(nock);
+
 describe('App', function () {
+  this.timeout(10000);
   beforeEach(function () {
     this.server = app.server;
   });
@@ -13,7 +17,7 @@ describe('App', function () {
 
   it('Should get info collection', function (done) {
     request(this.server)
-      .get('/v1/info')
+      .get('/v1/domain/info')
       .expect((res) => {
         expect(res.body).to.be.an(Array);
       })
@@ -22,7 +26,7 @@ describe('App', function () {
 
   it('Should get info by id', function (done) {
     request(this.server)
-      .get('/v1/info/1')
+      .get('/v1/domain/info/1')
       .expect((res) => {
         expect(res.body).to.be.an(Object);
       })
@@ -31,7 +35,7 @@ describe('App', function () {
 
   it('Should det info by id', function (done) {
     request(this.server)
-      .del('/v1/info/1')
+      .del('/v1/domain/info/1')
       .expect((res) => {
         expect(res.body).to.be.an(Object);
       })

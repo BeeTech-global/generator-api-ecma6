@@ -1,22 +1,23 @@
-const db_conf = require('../../database.json');
-const env = process.env.NODE_ENV === 'test' ? 'development' : 'default';
-const knex_conf = {
-  client: db_conf[env].driver,
+const dbConf = require('../../database.json');
+
+const config = process.config.NODE_config === 'test' ? 'development' : 'default';
+let knexConf = {
+  client: dbConf[config].driver,
   connection: {
-    filename: db_conf[env].filename
-  }
+    filename: dbConf[config].filename,
+  },
 };
 
-if(db_conf[env].driver === 'pg') {
-  knex_conf = {
-    client: db_conf[env].driver,
+if (dbConf[config].driver === 'pg') {
+  knexConf = {
+    client: dbConf[config].driver,
     connection: {
-      host: db_conf[env].host,
-      user: db_conf[env].user,
-      password: db_conf[env].password,
-      database: db_conf[env].database
-    }
+      host: dbConf[config].host,
+      user: dbConf[config].user,
+      password: dbConf[config].password,
+      database: dbConf[config].database,
+    },
   };
 }
 
-module.exports = knex_conf;
+module.exports = knexConf;
