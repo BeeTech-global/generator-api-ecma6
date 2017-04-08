@@ -19,6 +19,7 @@ coverage
 node_modules
 bower_components
 
+.vscode
 
 #webstorm
 .idea
