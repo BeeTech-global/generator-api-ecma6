@@ -14,6 +14,7 @@ describe('App', function () {
   it('Should return 404 for "/"', function (done) {
     request(this.server)
       .get('/')
+      .set('Authorization', 'Bearer token')
       .expect(404)
       .end(done);
   });
@@ -21,6 +22,7 @@ describe('App', function () {
   it('Should handler error', function (done) {
     request(this.server)
       .get('/error')
+      .set('Authorization', 'Bearer token')
       .expect(500)
       .end(done);
   });

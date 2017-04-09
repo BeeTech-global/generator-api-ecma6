@@ -18,8 +18,8 @@ const server = restify.createServer({
 });
 
 server.pre(restify.pre.sanitizePath());
-server.pre(security());
 server.pre(requestId({ headerName: requestIdHeaderName }));
+server.use(security());
 server.use(localization(supportedLanguages));
 server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
@@ -36,7 +36,6 @@ server.on('after', logRequests(logger));
 
 server.on('uncaughtException', (req, res, route, err) => {
   logger.fatal({ req, res, err });
-
   const customError = { message: 'Internal server error' };
 
   customError[requestIdHeaderName] = req.headers[requestIdHeaderName];

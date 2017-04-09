@@ -18,6 +18,7 @@ describe('App', function () {
   it('Should get info collection', function (done) {
     request(this.server)
       .get('/v1/domain/info')
+      .set('Authorization', 'Bearer token')
       .expect((res) => {
         expect(res.statusCode).to.be.eql(200);
         expect(res.body).to.be.an(Array);
@@ -28,6 +29,7 @@ describe('App', function () {
   it('Should get info by id', function (done) {
     request(this.server)
       .get('/v1/domain/info/1')
+      .set('Authorization', 'Bearer token')
       .expect((res) => {
         expect(res.statusCode).to.be.eql(200);
         expect(res.body).to.be.an(Object);
@@ -38,6 +40,7 @@ describe('App', function () {
   it('Should det info by id', function (done) {
     request(this.server)
       .del('/v1/domain/info/1')
+      .set('Authorization', 'Bearer token')
       .expect((res) => {
         expect(res.statusCode).to.be.eql(200);
         expect(res.body).to.be.an(Object);
@@ -49,6 +52,7 @@ describe('App', function () {
     it('Should get info collection', function (done) {
       request(this.server)
         .get('/v1/domain/subdomain/info')
+        .set('Authorization', 'Bearer token')
         .expect((res) => {
           expect(res.statusCode).to.be.eql(200);
           expect(res.body).to.be.an(Array);
@@ -59,6 +63,7 @@ describe('App', function () {
     it('Should get info by id', function (done) {
       request(this.server)
         .get('/v1/domain/subdomain/info/1')
+        .set('Authorization', 'Bearer token')
         .expect((res) => {
           expect(res.statusCode).to.be.eql(200);
           expect(res.body).to.be.an(Object);
@@ -69,6 +74,7 @@ describe('App', function () {
     it('Should det info by id', function (done) {
       request(this.server)
         .del('/v1/domain/subdomain/info/1')
+        .set('Authorization', 'Bearer token')
         .expect((res) => {
           expect(res.statusCode).to.be.eql(200);
           expect(res.body).to.be.an(Object);
