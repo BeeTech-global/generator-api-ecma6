@@ -9,7 +9,7 @@
     "eslint-plugin-import": "^2.2.0",
     "shelljs": "^0.7.7",
     "yeoman-generator": "^1.1.1",
-    "yosay": "^2.0.0"
+    "yosay": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
